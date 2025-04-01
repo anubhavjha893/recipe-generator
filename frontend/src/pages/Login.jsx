@@ -13,7 +13,7 @@ export default function Login({ setIsAuthenticated }) {
     setLoading(true);
     try {
       const response = await axios.post(
-        "https://mentor-project.onrender.com/api/auth/login",
+        "http://localhost:5000/api/auth/login",
         { email, password }
       );
       localStorage.setItem("token", response.data.token);

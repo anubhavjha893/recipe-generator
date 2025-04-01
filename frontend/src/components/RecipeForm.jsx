@@ -17,7 +17,7 @@ export function RecipeForm() {
 
     try {
       const response = await axios.post(
-        "https://mentor-project.onrender.com/api/recipes/generate",
+        "http://localhost:5000/api/recipes/generate",
         {
           ingredients: ingredients.split(",").map((item) => item.trim()),
           cuisine,

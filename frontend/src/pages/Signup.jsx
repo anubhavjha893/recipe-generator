@@ -13,7 +13,7 @@ export default function Signup() {
     e.preventDefault();
     try {
       await axios.post(
-        "https://mentor-project.onrender.com/api/auth/register",
+        "http://localhost:5000/api/auth/register",
         { name, lastName, email, password },
         { withCredentials: true }
       );

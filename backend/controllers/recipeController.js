@@ -60,7 +60,11 @@ const authenticateUser = (req, res, next) => {
 
 const saveRecipe = async (req, res) => {
     try {
-        const { title, ingredients, instructions, cuisine, dietaryPreferences } = req.body;
+        const { title, ingredients, instructions, cuisine, dietaryPreferences } = req.body.recipe;
+        console.log("asdasdasda", req.body);
+        
+        // console.log("Request body:", req.body); // Log the request body for debugging
+        
 
         if (!title || !ingredients || !instructions) {
             return res.status(400).json({ message: "Title, ingredients, and instructions are required" });
