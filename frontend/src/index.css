@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+.blinking-text {
+    font-weight: bold;
+    animation: blink-animation 1.5s infinite step-start;
+  }
+  
+  @keyframes blink-animation {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+
+  
+.blinking-text {
+    font-weight: bold;
+    animation: blink-animation 1.5s infinite step-start;
+  }
+  
+  @keyframes blink-animation {
+    50% {
+      opacity: 0;
+    }
+  }
+  
