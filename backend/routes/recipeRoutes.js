@@ -8,10 +8,10 @@ const {
     authenticateUser
 } = require("../controllers/recipeController");
 
-// ✅ Routes
-router.post("/generate", generateRecipe); // AI Recipe Generation
-router.post("/save", authenticateUser, saveRecipe); // Save Recipe (Requires Auth)
-router.get("/saved", authenticateUser, getSavedRecipes); // Get User Recipes
-router.delete("/delete/:recipeId", authenticateUser, deleteRecipe); // Delete Recipe
-// ✅ Export Routes
+
+router.post("/generate", generateRecipe); 
+router.post("/save", authenticateUser, saveRecipe); 
+router.get("/saved", authenticateUser, getSavedRecipes); 
+router.delete("/delete/:recipeId", authenticateUser, deleteRecipe);
+
 module.exports = router;
